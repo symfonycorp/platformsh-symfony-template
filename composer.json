@@ -7,14 +7,40 @@
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "blackfireio/blackfire-symfony-meta": "^1.0",
+        "composer/package-versions-deprecated": "1.11.99.3",
+        "doctrine/annotations": "^1.0",
+        "doctrine/doctrine-bundle": "^2.4",
+        "doctrine/doctrine-migrations-bundle": "^3.1",
+        "doctrine/orm": "^2.9",
+        "phpdocumentor/reflection-docblock": "^5.2",
+        "sensio/framework-extra-bundle": "^6.1",
         "symfony/console": "5.3.*",
         "symfony/dotenv": "5.3.*",
         "symfony/flex": "^1.3.1",
+        "symfony/form": "5.3.*",
         "symfony/framework-bundle": "5.3.*",
+        "symfony/http-client": "5.3.*",
+        "symfony/intl": "5.3.*",
+        "symfony/mailer": "5.3.*",
+        "symfony/messenger": "5.3.*",
+        "symfony/monolog-bundle": "^3.0",
+        "symfony/notifier": "5.3.*",
+        "symfony/process": "5.3.*",
+        "symfony/property-access": "5.3.*",
+        "symfony/property-info": "5.3.*",
+        "symfony/proxy-manager-bridge": "5.3.*",
         "symfony/runtime": "5.3.*",
-        "symfony/yaml": "5.3.*"
-    },
-    "require-dev": {
+        "symfony/security-bundle": "5.3.*",
+        "symfony/serializer": "5.3.*",
+        "symfony/string": "5.3.*",
+        "symfony/translation": "5.3.*",
+        "symfony/twig-bundle": "5.3.*",
+        "symfony/validator": "5.3.*",
+        "symfony/yaml": "5.3.*",
+        "symfonycorp/platformsh-meta": "^1.0",
+        "twig/extra-bundle": "^2.12|^3.0",
+        "twig/twig": "^2.12|^3.0"
     },
     "config": {
         "optimize-autoloader": true,
@@ -56,7 +82,14 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.3.*"
+            "require": "5.3.*",
+            "docker": "true"
         }
+    },
+    "require-dev": {
+        "symfony/debug-bundle": "5.3.*",
+        "symfony/maker-bundle": "^1.0",
+        "symfony/stopwatch": "5.3.*",
+        "symfony/web-profiler-bundle": "5.3.*"
     }
 }
