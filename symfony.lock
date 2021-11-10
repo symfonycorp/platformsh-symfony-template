@@ -1,4 +1,22 @@
 {
+    "blackfire/php-sdk": {
+        "version": "v1.27.1"
+    },
+    "blackfireio/blackfire-symfony-meta": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "fcf2e044bcd90c6f2f5a6c050645e77fb3bf31c7"
+        },
+        "files": [
+            ".blackfire.yaml"
+        ]
+    },
+    "composer/ca-bundle": {
+        "version": "1.3.1"
+    },
     "composer/package-versions-deprecated": {
         "version": "1.11.99.4"
     },
@@ -521,6 +539,9 @@
     },
     "symfony/yaml": {
         "version": "v5.3.6"
+    },
+    "symfonycorp/platformsh-meta": {
+        "version": "v1.0.0"
     },
     "twig/extra-bundle": {
         "version": "v3.3.3"
