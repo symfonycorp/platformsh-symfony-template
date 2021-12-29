@@ -199,6 +199,9 @@
     "symfony/doctrine-bridge": {
         "version": "v6.0.2"
     },
+    "symfony/doctrine-messenger": {
+        "version": "v6.0.2"
+    },
     "symfony/dotenv": {
         "version": "v6.0.2"
     },
