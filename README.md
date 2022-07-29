@@ -572,7 +572,6 @@ On this isolated environment, you're free to make any changes to your applicatio
 
 After that, here are a collection of additional resources you might find interesting as you continue with your migration to Platform.sh:
 
-- [Local development](#local-development)
 - [Troubleshooting](#troubleshooting)
 - [Adding a domain and going live](https://docs.platform.sh/domains/steps.html)
 - [(CDN) Content Delivery Networks](https://docs.platform.sh/domains/cdn.html)
@@ -630,11 +629,9 @@ This template includes a starting [`.blackfire.yml`](.blackfire.yml) file that c
 ### Resources
 
 
-- [Drupal](https://www.drupal.org/)
-- [Drupal 9 on Platform.sh](https://docs.platform.sh/guides/drupal9/deploy.html)
+- [Symfony](https://symfony.com/)
+- [Symfony on Platform.sh](https://docs.platform.sh/guides/symfony/deploy.html)
 - [Platform.sh PHP documentation](https://docs.platform.sh/languages/php.html)
-
-
 
 ### Contact
 
