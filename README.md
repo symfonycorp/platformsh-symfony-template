@@ -315,7 +315,7 @@ Please follow steps described <a href="https://symfony.com/doc/current/setup/sym
 </details>
 
 <details>
-<summary>TODO Symfony: using ddev</summary><br />
+<summary>Symfony: using ddev</summary><br />
 
 ddev provides an integration with Platform.sh that makes it simple to develop Symfony locally. Check the [providers documentation](https://ddev.readthedocs.io/en/latest/users/providers/platform/) for the most up-to-date information.
 
@@ -336,7 +336,7 @@ In general, the steps are as follows:
     environment_variables:
     project_id: PROJECT_ID
     environment: CURRENT_ENVIRONMENT
-    application: drupal
+    application: mySfApp
     ```
 1. Get the current environment's data with `ddev pull platform`.
 1. When you have finished with your work, run `ddev stop` and `ddev poweroff`.
