@@ -49,8 +49,8 @@
 <br /><br />
 <a href="#about"><strong>About</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="#getting-started"><strong>Getting started</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="#migrate"><strong>Migrate</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="#learn"><strong>Learn</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="#whats-next"><strong>What's next?</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="#contribute"><strong>Contribute</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <br />
 </p>
@@ -515,7 +515,6 @@ This repository has all of the code it needs in order to deploy to Platform.sh.
 
 ### Migrating your data
 
-
 If you are moving an existing site to Platform.sh, then in addition to code you also need to migrate your data. That means your database and your files.
 
 <details>
@@ -550,7 +549,7 @@ Note that `rsync` is picky about its trailing slashes, so be sure to include tho
 
 </details>
 
-<h2>What's next?</h2>
+## What's next?
   <p>
    Your project is already deployed in production. To start working on it locally:
    <ol>
@@ -692,9 +691,9 @@ See something that's wrong with this template that needs to be fixed? Something 
 <p align="center">
 <strong>How to contribute</strong>
 <br /><br />
-<a href="https://github.com/platformsh-templates/drupal9/issues/new?assignees=&labels=bug&template=bug_report.yml"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://github.com/platformsh-templates/drupal9/issues/new?assignees=&labels=feature+request&template=improvements.yml"><strong>Submit a feature request</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://github.com/platformsh-templates/drupal9/pulls"><strong>Open a pull request</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://github.com/symfonycorp/platformsh-symfony-template/issues/new?assignees=&labels=bug&template=bug_report.yml"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://github.com/symfonycorp/platformsh-symfony-template/issues/new?assignees=&labels=feature+request&template=improvements.yml"><strong>Submit a feature request</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://github.com/symfonycorp/platformsh-symfony-template/pulls"><strong>Open a pull request</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <br />
 </p>
 <br />
