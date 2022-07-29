@@ -572,7 +572,7 @@ On this isolated environment, you're free to make any changes to your applicatio
 After that, here are a collection of additional resources you might find interesting as you continue with your migration to Platform.sh:
 
 - [Troubleshooting](#troubleshooting)
-- [Adding a domain and going live](https://docs.platform.sh/domains/steps.html){:target="_blank"}
+- [Adding a domain and going live](https://docs.platform.sh/domains/steps.html)
 - [(CDN) Content Delivery Networks](https://docs.platform.sh/domains/cdn.html)
 - [Performance and observability with Blackfire.io](https://docs.platform.sh/integrations/observability/blackfire.html)
 - [Pricing](https://docs.platform.sh/overview/pricing.html)
