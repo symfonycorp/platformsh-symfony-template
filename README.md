@@ -59,7 +59,7 @@
 ## About
 
 <p>
-   We have just created a new <a href="https://symfony.com/doc">Symfony</a> project for you.
+   We have just created a new <a href="https://symfony.com/doc" target="_blank">Symfony</a> project for you.
    The generated code has been optimized for a typical web application hosted on <a href="https://platform.sh/">Platform.sh</a>.
 </p>
 
@@ -73,12 +73,12 @@
            The <a href="https://github.com/symfony/webapp-pack/blob/main/composer.json">webapp pack</a>, which includes all recommended Symfony packages for web applications, has been installed and configured, including:
 
   <ul>
-      <li><a href="http://twig.symfony.com/">Twig</a> as a templating system</li>
-      <li><a href="">Doctrine</a> for the ORM and database migrations</li>
-      <li><a href="">Webpack Encore</a> for JavaScript management</li>
-      <li><a href="">Symfony UX</a> for progressive JavaScript applications</li>
-      <li><a href="">Maker bundle</a> to let you quickly generate code for your controllers, migrations, and more</li>
-      <li><a href="">Symfony Web Profiler</a> to ease debugging issues locally.</li>
+      <li><a href="http://twig.symfony.com/" target="_blank">Twig</a> as a templating system</li>
+      <li><a href="https://symfony.com/doc/current/doctrine.html" target="_blank">Doctrine</a> for the ORM and database migrations</li>
+      <li><a href="https://symfony.com/doc/current/frontend.html#webpack-encore" target="_blank">Webpack Encore</a> for JavaScript management</li>
+      <li><a href="https://symfony.com/doc/current/frontend/ux.html" target="_blank">Symfony UX</a> for progressive JavaScript applications</li>
+      <li><a href="https://symfony.com/bundles/SymfonyMakerBundle/current/index.html" target="_blank">Maker bundle</a> to let you quickly generate code for your controllers, migrations, and more</li>
+      <li><a href="https://symfony.com/doc/current/reference/configuration/web_profiler.html" target="_blank">Symfony Web Profiler</a> to ease debugging issues locally.</li>
   </ul>
        </li>
        <li>A configuration optimized for <strong>PostgreSQL as a database</strong>.</li>
@@ -555,7 +555,7 @@ Note that `rsync` is picky about its trailing slashes, so be sure to include tho
    <ol>
        <li>Clone it in a local directory via <code>git clone XXXX some-dir/</code></li>
        <li>Install Docker and start services via <code>docker-compose up -d</code></li>
-       <li>Install the <a href="https://symfony.com/download">Symfony CLI</a> and start a web server via <code>symfony server:start -d</code></li>
+       <li>Install the <a href="https://symfony.com/download" target="_blank">Symfony CLI</a> and start a web server via <code>symfony server:start -d</code></li>
        <li>Commit changes, test them, push the new code to your favorite Git hosting</li>
        <li>Deploy via <code>symfony deploy</code></li>
    </ol>
@@ -572,7 +572,7 @@ On this isolated environment, you're free to make any changes to your applicatio
 After that, here are a collection of additional resources you might find interesting as you continue with your migration to Platform.sh:
 
 - [Troubleshooting](#troubleshooting)
-- [Adding a domain and going live](https://docs.platform.sh/domains/steps.html)
+- [Adding a domain and going live](https://docs.platform.sh/domains/steps.html){:target="_blank"}
 - [(CDN) Content Delivery Networks](https://docs.platform.sh/domains/cdn.html)
 - [Performance and observability with Blackfire.io](https://docs.platform.sh/integrations/observability/blackfire.html)
 - [Pricing](https://docs.platform.sh/overview/pricing.html)
