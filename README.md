@@ -341,6 +341,10 @@ In general, the steps are as follows:
     ```
 1. Get the current environment's data with `ddev pull platform`.
 1. When you have finished with your work, run `ddev stop` and `ddev poweroff`.
+1. Enter your ddev container using `ddev ssh`
+1. Run `composer install`
+1. Run `yarn encore dev` (or prod, depending on your needs)
+1. Access your frontend using url provided while doing `ddev restart`: <a>http://127.0.0.1:#portProvided</a>
 
 > **Note:**
 >
