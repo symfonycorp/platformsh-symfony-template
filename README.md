@@ -350,6 +350,10 @@ In general, the steps are as follows:
 >
 > PHP 8 is needed when using latest 6.x version of this template.<br>
 > So please change ddev .ddev/config.yaml file and use PHP version 8.1 or higher <br>
+> ```
+> // .ddev/config.yaml
+> php_version: "8.1"
+> ```
 > Then use `ddev restart`
 
 </details>
@@ -361,10 +365,23 @@ Lando supports PHP applications [configured to run on Platform.sh](https://docs.
 
 1. [Install Lando](https://docs.lando.dev/getting-started/installation.html).
 1. Make sure Docker is already running - Lando will attempt to start Docker for you, but it's best to have it running in the background before beginning.
-1. Start your apps and services with the command `lando start`.
+1. Initialize config files using `lando init` and then choose according options.
+1. Start your apps and services with the command `lando start`
 1. To get up-to-date data from your Platform.sh environment ([services *and* mounts](https://docs.lando.dev/platformsh/sync.html#pulling)), run the command `lando pull`.
 1. If at any time you have updated your Platform.sh configuration files, run the command `lando rebuild`.
 1. When you have finished with your work, run `lando stop` and `lando poweroff`.
+
+
+> **Note:**
+>
+> PHP 8 is needed when using latest 6.x version of this template.<br>
+> So please change .lando.yaml file and use PHP version 8.1 or higher <br>
+> ```
+> // .lando.yaml
+> config:
+>   php: '8.1'
+> ```
+> Then use `lando rebuild`
 
 </details>
 
