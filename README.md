@@ -320,8 +320,10 @@ ddev provides an integration with Platform.sh that makes it simple to develop Sy
 
 In general, the steps are as follows:
 
+1. run `composer install` and follow steps
+   run `yarn encore prod`
 1. [Install ddev](https://ddev.readthedocs.io/en/stable/#installation).
-1. A configuration file has already been provided at `.ddev/providers/platform.yaml`, so you should not need to run `ddev config`.
+1. run `ddev config`.
 1. [Retrieve an API token](https://docs.platform.sh/development/cli/api-tokens.html#get-a-token) for your organization via the management console.
 1. Update your ddev global configuration file to use the token you've just retrieved:
     ```yaml
@@ -340,7 +342,14 @@ In general, the steps are as follows:
 1. Get the current environment's data with `ddev pull platform`.
 1. When you have finished with your work, run `ddev stop` and `ddev poweroff`.
 
+> **Note:**
+>
+> PHP 8 is needed when using latest 6.x version of this template.<br>
+> So please change ddev .ddev/config.yaml file and use PHP version 8.1 or higher <br>
+> Then use `ddev restart`
+
 </details>
+
 <details>
 <summary>Symfony: using Lando</summary><br />
 
