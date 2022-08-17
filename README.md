@@ -23,37 +23,31 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/symfonycorp/platformsh-symfony-template/issues">
-<img src="https://img.shields.io/github/issues/symfonycorp/platformsh-symfony-template.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Issues" alt="Open issues" />
-</a>&nbsp&nbsp
-<a href="https://github.com/symfonycorp/platformsh-symfony-template/pulls">
-<img src="https://img.shields.io/github/issues-pr/symfonycorp/platformsh-symfony-template.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
-</a>&nbsp&nbsp
-
-[comment]: <> (<a href="https://github.com/symfonycorp/platformsh-symfony-template/blob/master/LICENSE">)
-
-[comment]: <> (<img src="https://img.shields.io/static/v1?label=License&message=MIT&style=for-the-badge&labelColor=f4f2f3&color=ffd9d9" alt="License" />)
-
-[comment]: <> (</a>&nbsp&nbsp)
-
-[comment]: <> (<br /><br />)
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/symfonycorp/platformsh-symfony-template-metadata/main/template-metadata-sf6.0-php8.1-webapp.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-    <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
-</a>
+   <a href="https://github.com/symfonycorp/platformsh-symfony-template/issues">
+   <img src="https://img.shields.io/github/issues/symfonycorp/platformsh-symfony-template.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Issues" alt="Open issues" />
+   </a>&nbsp&nbsp
+   <a href="https://github.com/symfonycorp/platformsh-symfony-template/pulls">
+   <img src="https://img.shields.io/github/issues-pr/symfonycorp/platformsh-symfony-template.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
+   </a>&nbsp&nbsp
+</p>
+<p align="center">
+   <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/symfonycorp/platformsh-symfony-template-metadata/main/template-metadata-sf6.0-php8.1-webapp.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+       <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
+   </a>
 </p>
 
 <hr>
 
 <p align="center">
-<strong>Contents</strong>
-<br /><br />
-<a href="#about"><strong>About</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="#getting-started"><strong>Getting started</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="#learn"><strong>Learn</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="#whats-next"><strong>What's next?</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="#contribute"><strong>Contribute</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<br />
-</p>
+   <strong>Contents</strong>
+   <br /><br />
+   <a href="#about"><strong>About</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <a href="#getting-started"><strong>Getting started</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <a href="#learn"><strong>Learn</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <a href="#whats-next"><strong>What's next?</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <a href="#contribute"><strong>Contribute</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <br />
+   </p>
 <hr>
 
 ## About
