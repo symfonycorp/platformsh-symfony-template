@@ -101,12 +101,15 @@ This will automatically create a new project and initialize the repository for y
 <br/>
 
 
-You can also quickly recreate this project locally with the following command:
+[comment]: <> (You can also quickly recreate this project locally with the following command:)
 
-```bash
-#TODO @FabienPotencier add this repo to Packagist 
-# composer create-project symfonycorp/platformsh-symfony-template:6.x -s dev
-```
+[comment]: <> (```bash)
+
+[comment]: <> (#TODO @FabienPotencier add this repo to Packagist )
+
+[comment]: <> (# composer create-project symfonycorp/platformsh-symfony-template:6.x -s dev)
+
+[comment]: <> (```)
 
 
 > **Note:**
