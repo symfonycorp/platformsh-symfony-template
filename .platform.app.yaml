@@ -16,11 +16,11 @@ runtime:
         - pdo_pgsql
         - sodium
         - xsl
-        
 
 variables:
     php:
-        opcache.preload: /app/config/preload.php
+        opcache.preload: config/preload.php
+
 build:
     flavor: none
 
@@ -35,17 +35,16 @@ web:
 
 mounts:
     "/var": { source: local, source_path: var }
-    
 
 relationships:
     database: "database:postgresql"
-    
+
 hooks:
     build: |
         set -x -e
 
         curl -fs https://get.symfony.com/cloud/configurator | bash
-        
+
         symfony-build
 
     deploy: |
