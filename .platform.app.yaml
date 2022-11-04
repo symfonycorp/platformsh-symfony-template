@@ -62,6 +62,8 @@ crons:
 
 workers:
     messenger:
+        disk: 256
+        size: 'S'
         commands:
             # Consume "async" messages (as configured in the routing section of config/packages/messenger.yaml)
             start: symfony console --time-limit=3600 --memory-limit=64M messenger:consume async
