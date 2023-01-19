@@ -92,15 +92,14 @@ Symfony for Platform.sh
 #### Quickstart
 
 
-The quickest way to deploy this template on Platform.sh is by clicking the button below.
+The quickest way to deploy this template on Platform.sh is by clicking the button below.<br>
 This will automatically create a new project and initialize the repository for you.
 
-<p align="center">
+<p align="left">
     <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/symfonycorp/platformsh-symfony-template-metadata/main/symfony-6.1-php8.1-webapp.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform" target="_blank">
         <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
     </a>
 </p>
-<br/>
 
 > **Note:**<BR/>
 > Platform.sh templates prioritize upstream release versions over our own. Despite this, we update template dependencies on a scheduled basis independent of those upstreams. Because of this, template repos do not contain releases. This may change in the future, but until then the `-s dev` flag is necessary to use `composer create-project`.
@@ -127,26 +126,25 @@ Then you can clone a copy of it locally with `git clone git@github.com:YOUR_NAME
 
    [Register for a 30 day free trial with Platform.sh](https://auth.api.platform.sh/register). When you have completed signup, select the **Create from scratch** project option. Give you project a name, and select a region where you would like it to be deployed. As for the *Production environment* option, make sure to match it to this repository's settings, or to what you have updated the default branch to locally.
 
-1. Install the Platform.sh CLI
+1. Install the <a href="https://symfony.com/download" target="_blank">Symfony CLI</a>
 
    #### Linux/OSX
 
    ```bash
-   brew install platformsh/tap/platformsh-cli
+   brew install symfony-cli/tap/symfony-cli
    ```
 
    #### Windows
 
    ```bash
-   scoop bucket add platformsh https://github.com/platformsh/homebrew-tap.git
-   scoop install platform
+   scoop install symfony-cli
    ```
 
-   You can verify the installation by logging in (`platform login`) and listing your projects (`platform project:list`).
+   You can verify the installation by logging in (`symfony login`) and listing your projects (`symfony project:list`).
 
 1. Set the project remote
 
-   Find your `PROJECT_ID` by running the command `platform project:list`
+   Find your `PROJECT_ID` by running the command `symfony project:list`
 
    ```bash
    +---------------+------------------------------------+------------------+---------------------------------+
@@ -156,16 +154,12 @@ Then you can clone a copy of it locally with `git clone git@github.com:YOUR_NAME
    +---------------+------------------------------------+------------------+---------------------------------+
    ```
 
-   Then from within your local copy, run the command `platform project:set-remote PROJECT_ID`.
+   Then from within your local copy, run the command `symfony cloud:project:set-remote PROJECT_ID`.
 
-1. Push
-
+1. Push to your Platform.sh project
    ```bash
-   git push platform DEFAULT_BRANCH
+   symfony deploy
    ```
-
-<!-- <br/>
-</blockquote> -->
 </details>
 
 <details>
@@ -177,22 +171,21 @@ Then you can clone a copy of it locally with `git clone git@github.com:YOUR_NAME
 
    [Register for a 30 day free trial with Platform.sh](https://auth.api.platform.sh/register). When you have completed signup, select the **Create from scratch** project option. Give you project a name, and select a region where you would like it to be deployed. As for the *Production environment* option, make sure to match it to whatever you have set at `https://YOUR_NAMESPACE/platformsh-symfony-template`.
 
-1. Install the Platform.sh CLI
+1. Install the <a href="https://symfony.com/download" target="_blank">Symfony CLI</a>
 
    #### Linux/OSX
 
    ```bash
-   brew install platformsh/tap/platformsh-cli
+   brew install symfony-cli/tap/symfony-cli
    ```
 
    #### Windows
 
    ```bash
-   scoop bucket add platformsh https://github.com/platformsh/homebrew-tap.git
-   scoop install platform
+   scoop install symfony-cli
    ```
 
-   You can verify the installation by logging in (`platform login`) and listing your projects (`platform project:list`).
+   You can verify the installation by logging in (`symfony login`) and listing your projects (`symfony project:list`).
 
 1. Setup the integration:
 
@@ -211,22 +204,21 @@ Then you can clone a copy of it locally with `git clone git@github.com:YOUR_NAME
 
    [Register for a 30 day free trial with Platform.sh](https://auth.api.platform.sh/register). When you have completed signup, select the **Create from scratch** project option. Give you project a name, and select a region where you would like it to be deployed. As for the *Production environment* option, make sure to match it to this repository's settings, or to what you have updated the default branch to locally.
 
-1. Install the Platform.sh CLI
+1. Install the <a href="https://symfony.com/download" target="_blank">Symfony CLI</a>
 
    #### Linux/OSX
 
    ```bash
-   brew install platformsh/tap/platformsh-cli
+   brew install symfony-cli/tap/symfony-cli
    ```
 
    #### Windows
 
    ```bash
-   scoop bucket add platformsh https://github.com/platformsh/homebrew-tap.git
-   scoop install platform
+   scoop install symfony-cli
    ```
 
-   You can verify the installation by logging in (`platform login`) and listing your projects (`platform project:list`).
+   You can verify the installation by logging in (`symfony login`) and listing your projects (`symfony project:list`).
 
 1. Create the repository
 
@@ -249,22 +241,21 @@ Then you can clone a copy of it locally with `git clone git@github.com:YOUR_NAME
 
    [Register for a 30 day free trial with Platform.sh](https://auth.api.platform.sh/register). When you have completed signup, select the **Create from scratch** project option. Give you project a name, and select a region where you would like it to be deployed. As for the *Production environment* option, make sure to match it to this repository's settings, or to what you have updated the default branch to locally.
 
-1. Install the Platform.sh CLI
+1. Install the <a href="https://symfony.com/download" target="_blank">Symfony CLI</a>
 
    #### Linux/OSX
 
    ```bash
-   brew install platformsh/tap/platformsh-cli
+   brew install symfony-cli/tap/symfony-cli
    ```
 
    #### Windows
 
    ```bash
-   scoop bucket add platformsh https://github.com/platformsh/homebrew-tap.git
-   scoop install platform
+   scoop install symfony-cli
    ```
 
-   You can verify the installation by logging in (`platform login`) and listing your projects (`platform project:list`).
+   You can verify the installation by logging in (`symfony login`) and listing your projects (`symfony project:list`).
 
 1. Create the repository
 
@@ -286,9 +277,9 @@ In all cases for developing with Platform.sh, it's important to develop on an is
 Each of the options below assume that you have already deployed this template to Platform.sh, as well as the following starting commands:
 
 ```bash
-platform get PROJECT_ID
+symfony get PROJECT_ID
 cd project-name
-platform environment:branch updates
+symfony branch updates
 ```
 
 <details>
@@ -311,7 +302,7 @@ In general, the steps are as follows:
 1. change `DATABASE_URL` value in your `.env.local file to `DATABASE_URL=pgsql://db:db@db:5432/db`.
 1. run `ddev config --php-version=8.1 --database=postgres:13`.
 1. run `ddev composer install`.
-1. Access your frontend using url provided while doing `ddev launch`: <a>http://127.0.0.1:#portProvided</a>
+1. run `ddev launch` to open your frontend in your favorite browser
 1. When you have finished with your work, run `ddev stop` and `ddev poweroff`.
 1. Enter your ddev container using `ddev ssh`
 
@@ -324,196 +315,15 @@ Lando supports PHP applications [configured to run on Platform.sh](https://docs.
 
 1. [Install Lando](https://docs.lando.dev/getting-started/installation.html).
 1. Make sure Docker is already running - Lando will attempt to start Docker for you, but it's best to have it running in the background before beginning.
-1. Initialize config files using `lando init` and then choose according options.
+1. Initialize config files using `lando init --option php=8.1 --option database=postgres:13` and then choose according options.
+   1. ? From where should we get your app's codebase? **current working directory**
+   1. ? What recipe do you want to use? **symfony**
+   1. ? Where is your webroot relative to the init destination? **public**
+   1. ? What do you want to call this app? **my-symfony-webapp**
 1. Start your apps and services with the command `lando start`
-1. To get up-to-date data from your Platform.sh environment ([services *and* mounts](https://docs.lando.dev/platformsh/sync.html#pulling)), run the command `lando pull`.
-1. If at any time you have updated your Platform.sh configuration files, run the command `lando rebuild`.
+1. Open your local website in your browser http://my-symfony-webapp.lndo.site/
 1. When you have finished with your work, run `lando stop` and `lando poweroff`.
 
-
-> **Note:**
->
-> PHP 8 is needed when using latest 6.x version of this template.<br>
-> So please change .lando.yaml file and use PHP version 8.1 or higher <br>
-> ```
-> // .lando.yaml
-> config:
->   php: '8.1'
-> ```
-> Then use `lando rebuild`
-
-</details>
-
-[comment]: <> (> **Note:**)
-
-[comment]: <> (>)
-
-[comment]: <> (> For many of the steps above, you may need to include the CLI flags `-p PROJECT_ID` and `-e ENVIRONMENT_ID` if you are not in the project directory or if the environment is associated with an existing pull request.)
-
-
-### Deploying to Platform.sh
-
-This repository has all of the code it needs in order to deploy to Platform.sh.
-
-
-<details>
-<summary>Deploy directly to Platform.sh from the command line</summary>
-<!-- <blockquote>
-<br/> -->
-
-1. Create a free trial:
-
-   [Register for a 30 day free trial with Platform.sh](https://auth.api.platform.sh/register). When you have completed signup, select the **Create from scratch** project option. Give you project a name, and select a region where you would like it to be deployed. As for the *Production environment* option, make sure to match it to this repository's settings, or to what you have updated the default branch to locally.
-
-1. Install the Platform.sh CLI
-
-   #### Linux/OSX
-
-   ```bash
-   curl -sS https://platform.sh/cli/installer | php
-   ```
-
-   #### Windows
-
-   ```bash
-   curl -f https://platform.sh/cli/installer -o cli-installer.php
-   php cli-installer.php
-   ```
-
-   You can verify the installation by logging in (`platformsh login`) and listing your projects (`platform project:list`).
-
-1. Set the project remote
-
-   Find your `PROJECT_ID` by running the command `platform project:list`
-
-   ```bash
-   +---------------+------------------------------------+------------------+---------------------------------+
-   | ID            | Title                              | Region           | Organization                    |
-   +---------------+------------------------------------+------------------+---------------------------------+
-   | PROJECT_ID    | Your Project Name                  | xx-5.platform.sh | your-username                   |
-   +---------------+------------------------------------+------------------+---------------------------------+
-   ```
-
-   Then from within your local copy, run the command `platform project:set-remote PROJECT_ID`.
-
-1. Push
-
-   ```bash
-   git push platform DEFAULT_BRANCH
-   ```
-
-<!-- <br/>
-</blockquote> -->
-</details>
-
-<details>
-<summary>Integrate with a GitHub repo and deploy pull requests</summary>
-<!-- <blockquote>
-<br/> -->
-
-1. Create a free trial:
-
-   [Register for a 30 day free trial with Platform.sh](https://auth.api.platform.sh/register). When you have completed signup, select the **Create from scratch** project option. Give you project a name, and select a region where you would like it to be deployed. As for the *Production environment* option, make sure to match it to whatever you have set at `https://YOUR_NAMESPACE/platformsh-symfony-template`.
-
-1. Install the Platform.sh CLI
-
-   #### Linux/OSX
-
-   ```bash
-   curl -sS https://platform.sh/cli/installer | php
-   ```
-
-   #### Windows
-
-   ```bash
-   curl -f https://platform.sh/cli/installer -o cli-installer.php
-   php cli-installer.php
-   ```
-
-   You can verify the installation by logging in (`platformsh login`) and listing your projects (`platform project:list`).
-
-1. Setup the integration:
-
-   Consult the [GitHub integration documentation](https://docs.platform.sh/integrations/source/github.html#setup) to finish connecting your repository to a project on Platform.sh. You will need to create an Access token on GitHub to do so.
-
-<!-- <br/>
-</blockquote> -->
-</details>
-
-<details>
-<summary>Integrate with a GitLab repo and deploy merge requests</summary>
-<!-- <blockquote>
-<br/> -->
-
-1. Create a free trial:
-
-   [Register for a 30 day free trial with Platform.sh](https://auth.api.platform.sh/register). When you have completed signup, select the **Create from scratch** project option. Give you project a name, and select a region where you would like it to be deployed. As for the *Production environment* option, make sure to match it to this repository's settings, or to what you have updated the default branch to locally.
-
-1. Install the Platform.sh CLI
-
-   #### Linux/OSX
-
-   ```bash
-   curl -sS https://platform.sh/cli/installer | php
-   ```
-
-   #### Windows
-
-   ```bash
-   curl -f https://platform.sh/cli/installer -o cli-installer.php
-   php cli-installer.php
-   ```
-
-   You can verify the installation by logging in (`platformsh login`) and listing your projects (`platform project:list`).
-
-1. Create the repository
-
-   Create a new repository on GitLab, set it as a new remote for your local copy, and push to the default branch.
-
-1. Setup the integration:
-
-   Consult the [GitLab integration documentation](https://docs.platform.sh/integrations/source/gitlab.html#setup) to finish connecting a repository to a project on Platform.sh. You will need to create an Access token on GitLab to do so.
-
-<!-- <br/>
-</blockquote> -->
-</details>
-
-<details>
-<summary>Integrate with a Bitbucket repo and deploy pull requests</summary>
-<!-- <blockquote>
-<br/> -->
-
-1. Create a free trial:
-
-   [Register for a 30 day free trial with Platform.sh](https://auth.api.platform.sh/register). When you have completed signup, select the **Create from scratch** project option. Give you project a name, and select a region where you would like it to be deployed. As for the *Production environment* option, make sure to match it to this repository's settings, or to what you have updated the default branch to locally.
-
-1. Install the Platform.sh CLI
-
-   #### Linux/OSX
-
-   ```bash
-   curl -sS https://platform.sh/cli/installer | php
-   ```
-
-   #### Windows
-
-   ```bash
-   curl -f https://platform.sh/cli/installer -o cli-installer.php
-   php cli-installer.php
-   ```
-
-   You can verify the installation by logging in (`platformsh login`) and listing your projects (`platform project:list`).
-
-1. Create the repository
-
-   Create a new repository on Bitbucket, set it as a new remote for your local copy, and push to the default branch.
-
-1. Setup the integration:
-
-   Consult the [Bitbucket integration documentation](https://docs.platform.sh/integrations/source/bitbucket.html#setup) to finish connecting a repository to a project on Platform.sh. You will need to create an Access token on Bitbucket to do so.
-
-<!-- <br/>
-</blockquote> -->
 </details>
 
 ### Migrating your data
@@ -526,7 +336,7 @@ If you are moving an existing site to Platform.sh, then in addition to code you 
 First, obtain a database dump from your current site and save your dump file as `database.sql`. Then, import the database into your Platform.sh site using the CLI:
 
 ```bash
-platform sql -e main < database.sql
+symfony sql -e main < database.sql
 ```
 
 </details>
@@ -536,16 +346,16 @@ platform sql -e main < database.sql
 You first need to download your files from your current hosting environment.
 The easiest way is likely with rsync, but consult your old host's documentation.
 
-The `platform mount:upload` command provides a straightforward way to upload an entire directory to your site at once to a `mount` defined in a `.platform.app.yaml` file.
+The `symfony cloud:mount:upload` command provides a straightforward way to upload an entire directory to your site at once to a `mount` defined in a `.platform.app.yaml` file.
 Under the hood, it uses an SSH tunnel and rsync, so it is as efficient as possible.
-(There is also a `platform mount:download` command you can use to download files later.)
+(There is also a `symfony cloud:mount:download` command you can use to download files later.)
 Run the following from your local Git repository root (modifying the `--source` path if needed and setting `BRANCH_NAME` to the branch you are using).
 
 A few examples are listed below, but repeat for all directories that contain data you would like to migrate.
 
 ```bash
-$ platform mount:upload -e main --mount web/sites/default/files --source ./web/sites/default/files
-$ platform mount:upload -e main --mount private --source ./private
+$ symfony cloud:mount:upload -e main --mount web/sites/default/files --source ./web/sites/default/files
+$ symfony cloud:mount:upload -e main --mount private --source ./private
 ```
 
 Note that `rsync` is picky about its trailing slashes, so be sure to include those.
@@ -566,7 +376,7 @@ Note that `rsync` is picky about its trailing slashes, so be sure to include tho
 
 
 With your application now deployed on Platform.sh, things get more interesting.
-Run the command `platform environment:branch new-feature` for your project, or open a trivial pull request off of your current branch.
+Run the command `symfony branch new-feature` for your project, or open a trivial pull request off of your current branch.
 
 The resulting environment is an *exact* copy of production.
 It contains identical infrastructure to what's been defined in your configuration files, and even includes data copied from your production environment in its services.
@@ -586,14 +396,13 @@ After that, here are a collection of additional resources you might find interes
 
 ### Troubleshooting
 
-
 <details>
 <summary><strong>Accessing logs</strong></summary><br/>
 
 After the environment has finished its deployment, you can investigate issues that occured on startup, `deploy` and `post_deploy` hooks, and generally at runtime using the CLI. Run the command:
 
 ```bash
-platform ssh
+symfony ssh
 ```
 
 If you are running the command outside of a local copy of the project, you will need to include the `-p` (project) and/or `-e` (environment) flags as well.
@@ -606,11 +415,11 @@ Once you have connected to the container, [logs](https://docs.platform.sh/develo
 <summary><strong>Rebuilding cache</strong></summary><br/>
 
 You may run into a database error after installing Symfony on your production environment initially.
-To fix, SSH into the application container (`platform ssh`) and rebuild the cache using Symfony console:
+To fix, SSH into the application container (`symfony ssh`) and rebuild the cache using Symfony console:
 
 ```bash
 php bin/console cache:clear
-php bin/console cache:pool:clear cache.redis
+php bin/console cache:pool:clear cache.app
 ```
 </details>
 
@@ -648,7 +457,7 @@ This template is maintained by the Platform.sh Developer Relations team, and the
 This template has been specifically designed to deploy on Platform.sh.
 
 <details>
-<summary>What is Platform.sh?</summary><br/>
+<summary>What is Platform.sh?</summary>
 
 Platform.sh is a unified, secure, enterprise-grade platform for building, running and scaling web applications. We’re the leader in Fleet Ops: Everything you need to manage your fleet of websites and apps is available from the start. Because infrastructure and workflows are handled from the start, apps just work, so teams can focus on what really matters: making faster changes, collaborating confidently, and scaling responsibly. Whether managing a fleet of ten or ten thousand sites and apps, Platform.sh is the Developer- preferred solution that scales right.
 
@@ -678,12 +487,9 @@ To find out more, check out the demo below and go to our [website](https://platf
 <a href="https://platform.sh/demo/"><img src="https://img.youtube.com/vi/ny2YeD6Qt3M/0.jpg" alt="The Platform.sh demo"></a>
 </p>
 
-
 </details>
 
-
-
-## Contribute
+<h2 align="center">Contribute</h2>
 
 <h3 align="center">Help us keep top-notch templates!</h3>
 
