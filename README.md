@@ -1,0 +1,2 @@
+Symfony for Platform.sh
+=======================

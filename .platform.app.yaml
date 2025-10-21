@@ -1,0 +1,72 @@
+name: app
+
+type: php:8.4
+
+runtime:
+    extensions:
+        - apcu
+        - blackfire
+        - ctype
+        - iconv
+        - mbstring
+        - pdo_pgsql
+        - sodium
+        - xsl
+        
+
+variables:
+    php:
+        opcache.preload: config/preload.php
+build:
+    flavor: none
+
+disk: 1024
+
+web:
+    locations:
+        "/":
+            root: "public"
+            expires: 1h
+            passthru: "/index.php"
+
+mounts:
+    "/var/cache": { source: local, source_path: var/cache }
+    
+
+relationships:
+    database: "database:postgresql"
+    
+hooks:
+    build: |
+        set -x -e
+
+        curl -fs https://get.symfony.com/cloud/configurator | bash
+        
+        NODE_VERSION=22 symfony-build
+
+    deploy: |
+        set -x -e
+
+        symfony-deploy
+
+crons:
+    security-check:
+        # Check that no security issues have been found for PHP packages deployed in production
+        spec: '50 23 * * *'
+        cmd: if [ "$PLATFORM_ENVIRONMENT_TYPE" = "production" ]; then croncape COMPOSER_ROOT_VERSION=1.0.0 COMPOSER_AUDIT_ABANDONED=ignore composer audit --no-cache; fi
+    clean-expired-sessions:
+        spec: '17,47 * * * *'
+        cmd: croncape php-session-clean
+
+workers:
+    messenger:
+        # PHP background workers usually don't require much CPU. See
+        # https://symfony.com/doc/current/cloud/cookbooks/resources_allocation.html
+        # for more information
+        size: XS
+        resources:
+            base_memory: 64 # Keep in sync with the `memory-limit` flag value
+            memory_ratio: 128
+        commands:
+            # Consume "async" messages (as configured in the routing section of config/packages/messenger.yaml)
+            start: symfony console --time-limit=3600 --memory-limit=64M messenger:consume async
