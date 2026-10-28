@@ -61,7 +61,7 @@ crons:
 workers:
     messenger:
         # PHP background workers usually don't require much CPU. See
-        # https://symfony.com/doc/current/cloud/cookbooks/resources_allocation.html
+        # https://fixed.docs.upsun.com/create-apps/flexible-resources.html
         # for more information
         size: XS
         resources:
